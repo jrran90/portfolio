@@ -23,28 +23,30 @@
 						</p>
 						<!-- contact -->
 						<p class="pt-2 text-gray-600 dark:text-gray-100 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
-							<i class="far fa-paper-plane text-blue-600 pr-4"></i> <a class="underline" href="mailto:jazer.zayas10@gmail.com">jazer.zayas10@gmail.com</a>
+							<i class="far fa-paper-plane text-blue-600 pr-4"></i> <a class="underline" href="mailto:jrran90.work@gmail.com">jrran90.work@gmail.com</a>
 						</p>
 						<p class="pt-2 text-gray-600 dark:text-gray-100 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
-							<i class="fab fa-github text-blue-600 pr-4"></i> <a target="_blank" href="https://github.com/jkpz10">jkpz10</a>
+							<i class="fab fa-github text-blue-600 pr-4"></i> <a target="_blank" class="underline" href="https://github.com/jrran90">jrran90</a>
 						</p>
 
 						<p class="pt-8 text-sm">{{profileDetails.shortDesc}}</p>
 
 						<div class="pt-5 pb-8">
-							<a class="cursor-pointer bg-blue-600 font-bold hover:bg-blue-900 px-4 py-2 rounded-full text-white transition-all w-2/3 text-sm text-center" target="_blank" href="https://drive.google.com/file/d/1gNSK2YcdYJTW0GZEnonk5XYhGCp6T3dg/view?usp=sharing">
+							<a class="cursor-pointer bg-blue-600 font-bold hover:bg-blue-900 px-4 py-2 rounded-full text-white transition-all w-2/3 text-sm text-center" target="_blank" href="https://docs.google.com/document/d/1DjtF9WpkD5CFO00N2XA8PhRJtCy067GP28v9f9SMACg/edit">
 								Download CV
 							</a> 
 						</div>
 
 						<!-- Tools links -->
-						<div class="flex justify-between items-center lg:pb-0 lg:w-full mx-auto sm:pb-16 pb-6 w-4/5">
-							<img class="sm:w-12 w-6" src="@/assets/img/icons/vue.png" alt="vue">
-							<img class="sm:w-12 w-6" src="@/assets/img/icons/nuxt.svg" alt="nuxt">
-							<img class="sm:w-12 w-6" src="@/assets/img/icons/react.png" alt="react">
-							<img class="sm:w-12 w-6" src="@/assets/img/icons/alpine.png" alt="alpine">
-							<img class="sm:w-12 w-6" src="@/assets/img/icons/tailwindcss.png" alt="tailwindcss">
-							<img class="sm:w-12 w-6" src="@/assets/img/icons/angular.png" alt="angular">
+<!--						<div class="flex justify-between items-center lg:pb-0 lg:w-full mx-auto sm:pb-16 pb-6 w-4/5">-->
+						<div class="grid grid-cols-5 sm:grid-cols-10 gap-4 justify-between items-center lg:pb-0 lg:w-full mx-auto sm:pb-16 pb-6 w-4/5">
+							<img
+								class="sm:w-10 w-6"
+								v-for="skill in skills"
+								:key="skill"
+								:src="require(`@/assets/img/icons/${skill}.svg`)"
+								:alt="skill"
+							/>
 						</div>
 						
 						<!-- Use https://simpleicons.org/ to find the svg for your preferred product --> 
@@ -56,7 +58,7 @@
 				<!--Img Col-->
 				<div class="w-full lg:w-2/5">
 					<!-- Big profile image for side bar (desktop) -->
-					<img :src="profileImg" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+					<img :src="profileImg" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block object-cover" style="height: 650px">
 					<!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
 					
 				</div>
@@ -141,7 +143,7 @@
 			</div>
 
 			<div class="text-gray-200 flex p-5 text-sm">
-				Built with <img class="w-6 h-5 mx-3" src="@/assets/img/icons/vue.png" alt="vue">
+				Built with <img class="w-6 h-5 mx-3" src="@/assets/img/icons/vuejs.svg" alt="vue">
 			</div>
 		</div>
 	</div>
@@ -160,13 +162,31 @@ export default {
 		return {
 			darkMode: false,
 			scrolled: false,
-			profileImg : require('@/assets/img/profilePictures/prenup.jpg'),
+			profileImg : require('@/assets/img/prof-pic.jpeg'),
 			profileDetails: {
-				name: 'Jazer Kemuel Zayas',
-				jobDesc: 'Web Developer (Advance Front-End)',
-				location: 'Cagayan De oro, Philippines',
-				shortDesc: '3+ years experience as front end web developer. I am a heavy user of development tools like vueJs/nuxtJs for complex User interface, AlpineJS for a little sprinkle of DOM reactivity and behavior paired with tailwindCSS to rapidly build modern websites. Also includes a liitle bit of angular and laravel.'
-			}
+				name: 'Jhon Rey Ranario',
+				jobDesc: 'Full Stack Web Developer',
+				location: 'Philippines 9000',
+				shortDesc: 'A full stack web developer having 8+ years of experience. Worked and collaborate on over a dozen websites and app, I\'ve realized the most important aspect that a client need is a support and maintenance. Working with me guarantees top quality in both terms.'
+			},
+			skills: [
+					'vuejs',
+					'laravel',
+					'tailwindcss',
+					'html5',
+					'css3',
+					'javascript',
+					'php',
+					'bootstrap',
+					'adobe-xd',
+					'mysql',
+					'mongodb',
+					'sass',
+					'typescript',
+					'nodejs',
+          'wordpress',
+          'woocommerce'
+			],
 		}
 	},
 	methods: {
@@ -185,8 +205,3 @@ export default {
 	},
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-
-</style>
