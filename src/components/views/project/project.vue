@@ -46,21 +46,21 @@ export default {
           subTitle: 'VueJS, Laravel, MongoDB, PayPal',
           title: 'ML Rewards',
           description: `It is an online platform that aims to bring forth games such as memory, analysis, and tactic genres in order to help the user enhance their intellect. It further connect components from Mobile Legend: Bang Bang, such as heroes, hero skills, roles, and so forth, to even provide players with a fully immersive experience while utilizing our platform.`,
-          github: 'https://mlrewards.me/'
+          github: '#'
         },
         {
           img: require('@/assets/img/projectsThumbnail/nantiaja.png'),
           subTitle: 'VueJS, NodeJS, WooCommerce, Shopify, FinTech',
           title: 'NantiAja',
           description: `A financial service that divides payment into four installments on one of the supported merchants. Supported multiple e-commerce platforms i.e., Shopify, WooCommerce, Magento, PrestaShop and even custom one.`,
-          github: 'https://nantiaja.com/'
+          github: '#'
         },
         {
           img: require('@/assets/img/projectsThumbnail/empatkali.png'),
           subTitle: 'VueJS, NodeJS, WooCommerce, FinTech',
           title: 'PT Empat Kali',
           description: `Modern payment solutions that allows you to pay 25% up-front, and settle the remaining 75% later with 0% interest. Supported multiple e-commerce platforms i.e., Shopify, WooCommerce, Magento, PrestaShop and even custom one.`,
-          github: 'https://empatkali.co.id/'
+          github: '#'
         },
         {
           img: require('@/assets/img/projectsThumbnail/vitacorpo.png'),
@@ -90,7 +90,7 @@ export default {
           subTitle: 'VueJS, Laravel',
           title: 'Mednefits Analytics Dashboard',
           description: `Me and co-developer assigned to work on this project, We design and Develop this analytics dashboard from scratch using VueJs and chartJs or the charting, analytics for how many users are active ,in-active, their sales etc..`,
-          github: 'https://github.com/jkpz10/vue_mednefits_analytics'
+          github: '#'
 
         },
         {
@@ -99,7 +99,6 @@ export default {
           title: 'Motormate Group of Companies',
           description: `A motorcycle wholesaler, retailer and services such as, tune-up, change oil, etc. We created custom HRIS (Human Resource Information System) for 201, Payroll, etc.`,
           github: 'https://motormate-group.com'
-
         },
       ],
     }
